@@ -4,19 +4,33 @@
 }
 .First-Name{ 
     color: black;
+    font-size:250%
 }
 .Last-Name{ 
     color: red;
+    font-size: 250%;  
 }
-
 .Mission-Ready{ 
     display: flex;
     justify-content: center;
     color: purple;
+    font-size: larger;
 }
 header { 
-    background-color: aquamarine;
-    padding: 0px;
-    margin: 0px;
-    border: solid purple 3px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: -10px;
+    border-bottom: solid black 5px;
+    font-family: 'Oswald', sans-serif;
+}
+.social { 
+    display: flex;  
+}
+@media screen and (max-width: 768px) {
+    header
+    { 
+    size: 25px;
+    }
+    
 }
