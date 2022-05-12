@@ -1,0 +1,22 @@
+.name { 
+    display: flex;
+    justify-content: center;
+}
+.First-Name{ 
+    color: black;
+}
+.Last-Name{ 
+    color: red;
+}
+
+.Mission-Ready{ 
+    display: flex;
+    justify-content: center;
+    color: purple;
+}
+header { 
+    background-color: aquamarine;
+    padding: 0px;
+    margin: 0px;
+    border: solid purple 3px;
+}
