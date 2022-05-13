@@ -6,11 +6,6 @@
 body{
     background-color: #eee; 
 }
-
-
-
-
-
 .name { 
     display: flex;
     justify-content: center;
@@ -20,7 +15,7 @@ body{
     font-size:250%
 }
 .Last-Name{ 
-    color: red 2px;
+    color: red;
     font-size: 250%;  
 }
 .Mission-Ready{ 
@@ -40,7 +35,7 @@ header {
 .social { 
     display: flex;  
 }
-#pic { 
+.pic { 
     background-image:url(p8.jpeg);
     width: 800px;
     height: 800px;
@@ -48,7 +43,7 @@ header {
     background-repeat: no-repeat;
     background-position: center; 
     border-radius: 50%;
-    border: 1px solid red; 
+    border: 2px solid black; 
     overflow: hidden; 
 }
 .pic-container{ 
@@ -62,19 +57,18 @@ header {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 0;
-    transition: 1s;
+    transition: 0.8s;
 }
 .button::before, .button::after{ 
     position: absolute;
     background: #eee;
     z-index: -1;
-    transition: 1s;
+    transition: 0.8s;
     content: '';
 }
 .button::before{ 
@@ -103,43 +97,41 @@ header {
     padding: 15px; 
     margin: 15px; 
 }
-
-
-@media screen and (max-width: 768px) {
-    #pic
-    { 
-        width: 450px;
-        height: 450px;
-    }
-    
+.about{ 
+    text-align: center;
+    font-family: 'Oswald';
+    padding: 0px 50px; 
 } 
-
-@media screen and (max-width: 600px) { 
-    #pic
-    { 
-        width: 350px;
-        height: 350px; 
-    }
-    
+.form{ 
+    display: flex;
+    justify-content: center;
+    font-family:'Oswald';
+    border: solid ;
+    margin: 5%;
 }
+
 @media screen and (max-width: 768px) {
     .name
     { 
         font-size: 15px; 
     }
-    
+    .socials{ 
+        flex-direction: column;
+    }
+    .pic{ 
+        width: 450px;
+        height: 450px;
+    }
 }
+
 @media screen and (max-width: 600px) {
     .name
     { 
         font-size: 10px; 
     }
-    
-}  
-@media screen and (max-width: 768px) {
-    .socials
-    { 
-        flex-direction: column;
+    .pic{ 
+        width: 350px;
+        height: 350px;
     }
     
 }  
