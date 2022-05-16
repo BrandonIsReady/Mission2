@@ -64,6 +64,9 @@ header {
     z-index: 0;
     transition: 0.8s;
 }
+.deco{ 
+    text-decoration: none;
+}
 .button::before, .button::after{ 
     position: absolute;
     background: #eee;
@@ -96,20 +99,29 @@ header {
     justify-content: space-evenly;
     padding: 15px; 
     margin: 15px; 
+    
 }
-.about{ 
+#about{ 
     text-align: center;
     font-family: 'Oswald';
     padding: 0px 50px; 
 } 
-.form{ 
+#form{ 
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family:'Oswald';
     border: solid ;
     margin: 5%;
 }
-
+.footer{ 
+    display: flex;
+    justify-content: center;
+    padding: 30px; 
+    background-color: beige;
+    border-top: solid black 5px;
+    text-align: center;
+}
 @media screen and (max-width: 768px) {
     .name
     { 
