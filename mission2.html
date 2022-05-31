@@ -1,102 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mission2.css" type="text/css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="mission2.js"> </script> 
-    <title>BS Mission 2</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="mission2.css" type="text/css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>BS Mission 2</title>
 </head>
+
 <body>
-    <header> 
-         <div class="name"> 
-            <div class="First-Name"> <h1> Brandon &nbsp </h1> </div>
-             
-            <div class="Last-Name"> <h1> Stirling</h1> </div>  
-         </div> 
-        
-         <div class="Mission-Ready"> 
-            <h3>Mission Ready Full Stack Developer</h3>
+   <header>
+      <div class="name">
+         <div class="First-Name">
+            <h1> Brandon &nbsp </h1>
+         </div>
+
+         <div class="Last-Name">
+            <h1> Stirling</h1>
+         </div>
+      </div>
+
+      <div class="Mission-Ready">
+         <h3>Mission Ready Full Stack Developer</h3>
+      </div>
+
+
+   </header>
+   <br><br> <br> <br>
+
+   <div class="pic-container">
+      <div class="overlay"> </div>
+      <div class="pic"></div>
+   </div>
+   <br><br>
+
+   <div class="socials">
+
+      <div class="button"> <a href="#form"> Contact Me! </a> </div><br>
+
+      <div class="button"> <a href="#about"> About Myself </a> </div><br>
+
+      <div class="button"> <a href="https://www.facebook.com/" target="_blank"> Facebook! </a> </div><br>
+
+
+
+      <div class="button"> <a href="https://www.linkedin.com/feed/" target="_blank">linkedin! </a> </div><br>
+
+      <div class="button"> <a href="https://www.instagram.com/stirling_brandon/?hl=en" target="_blank"> Instagram! </a>
+      </div><br>
+
+
+
+   </div>
+
+   <br><br><br>
+</body>
+
+<body>
+   <div id="about">
+      <h2><b> About Me!</b></h2>
+      <br> <br>
+
+      <p> Back in 2018, I was working security, and I got to see plenty of amazing things all through New
+         Zealand.<br><br>
+
+         I had worked in the control room for major events, Been backstage of concerts, and was requested to travel to
+         the South Island to assist in securing stadiums for The All Blacks. <br><br>
+
+         In 2019, I signed with Eden Park Trust as an asset protection officer at the young age of 20. I was responsible
+         for making sure everyone was abiding by Health and Saftey requirements, and gaining access through correct
+         means <br><br>
+
+         I've always known that I wanted to work in the I.T industry, but I never really knew how to enter. <br><br>
+
+         I was able to be apart of the team to deliver Eden Park's first concert, I worked nearly 20 hours straight that
+         day <br><br>
+
+         while I was getting to do and see some pretty wild things, it was always mindless work, and I knew I couldnt do
+         it forever <br><br>
+
+         for a while, I worked on certifications through CompTIA that mainly focused on the networking side of the
+         industry, while i enjoyed learning about this, it didnt quite scratch the itch i had. <br><br>
+
+         In March of 2022, I was pointed in the direction of Mission Ready by a family member, I applied for full Stack
+         developer course, and never looked back. <br><br>
+      </p>
+   </div>
+
+   <br>
+
+   <div id="form">
+      <form action="mailto:b.stirling@hotmail.co.nz" method="post">
+         <label> Leave me a message!</label> <br><br>
+
+         <textarea id="textbox" name="message" rows="25" cols="30">
+       </textarea>
+         <br><br>
+
+         <input type="submit" value="Submit">
+
+      </form>
+   </div>
+
+
+   <div class="theGame">
+
+      <div class="gameWriting">
+
+         <h1> Guess my Number! </h1>
+         <p class="between"> (between 1 and 50) </p>
+         <button class="resetButton"> Reset! </button>
+         <div class="number">? </div>
+
+      </div>
+
+      <div class="spacing">
+         <div class="left">
+            <input type="number" class="guess">
+            <button class="checkButton"> Check here! </button>
          </div>
 
 
-    </header>
-    <br><br> <br> <br> 
+         <div class="right">
+            <p class="userInput">Start guessing</p>
+            <p class="start-score"> Score:
+            <div class="Score"> 20 </div>
+            </p>
+            <p class="highScore"> Highscore:
+            <div class="newHighScore"> 0 </div>
+            </p>
+         </div>
+      </div>
 
-    <div class="pic-container"> 
-       <div class="overlay"> </div>
-       <div class="pic"></div>
-    </div>
-<br><br>
 
-<div class="socials">
-
-    <div class="button"> <a href="#form"> Contact Me! </a> </div><br>
-
-    <div class="button"> <a href="#about"> About Myself </a> </div><br> 
-
-    <div class="button"> Facebook! </div><br> 
-
-    <div class="button"> linkedin!</div><br>
-
-    <div class="button"> Instagram!</div><br>
-     
-
- 
-</div>
-
-<br><br><br>
-</body>
-
-<body> 
-<div id="about">
-   <h2><b> About Me!</b></h2>
-   <br> <br>
-
-   <p> Back in 2018, I was working security, and I got to see plenty of amazing things all through New Zealand.<br><br>
-
-    I had worked in the control room for major events, Been backstage of concerts, and was requested to travel to the South Island to assist in securing stadiums for The All Blacks. <br><br>
-
-   In 2019, I signed with Eden Park Trust as an asset protection officer at the young age of 20. I was responsible for making sure everyone was abiding by Health and Saftey requirements, and gaining access through correct means <br><br>
-
-   I've always known that I wanted to work in the I.T industry, but I never really knew how to enter. <br><br>
-
-   I was able to be apart of the team to deliver Eden Park's first concert, I worked nearly 20 hours straight that day <br><br>
-
-   while I was getting to do and see some pretty wild things, it was always mindless work, and I knew I couldnt do it forever <br><br>
-
-   for a while, I worked on certifications through CompTIA that mainly focused on the networking side of the industry, while i enjoyed learning about this, it didnt quite scratch the itch i had. <br><br>
-
-   In March of 2022, I was pointed in the direction of Mission Ready by a family member, I applied for full Stack developer course, and never looked back. <br><br>
-  </p>
-</div>
-
-<br> 
-
-<div id="form"> 
-    <form action="mailto:b.stirling@hotmail.co.nz" method="post">
-          <label> Leave me a message!</label> <br><br> 
-   
-       <textarea id="textbox" name="message" rows="25" cols="30"> 
-       </textarea>
-        <br><br>
-
-        <input type="submit"value="Submit">
-    
-    </form>
-</div>
- 
-<footer> 
-   <div class="footer"> 
-   <b>  Designed by Brandon Stirling, Copyright 2022. All rights reserved. </b>
    </div>
-</footer>
 
+
+
+
+   <div class="footer">
+      <b> Designed by Brandon Stirling, Copyright 2022. All rights reserved. </b>
+   </div>
+   </footer>
+   <script src="mission2.js"></script>
 </body>
+
 </html>

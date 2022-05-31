@@ -1,30 +1,36 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #eee; 
+
+body {
+    background-color: #eeeeee;
 }
-.name { 
+
+.name {
     display: flex;
     justify-content: center;
 }
-.First-Name{ 
+
+.First-Name {
     color: black;
-    font-size:250%
+    font-size: 250%
 }
-.Last-Name{ 
+
+.Last-Name {
     color: red;
-    font-size: 250%;  
+    font-size: 250%;
 }
-.Mission-Ready{ 
+
+.Mission-Ready {
     display: flex;
     justify-content: center;
     color: purple;
     font-size: larger;
 }
-header { 
+
+header {
     display: flex;
     flex-direction: column;
     background-color: beige;
@@ -32,25 +38,29 @@ header {
     border-bottom: solid black 5px;
     font-family: 'Oswald', sans-serif;
 }
-.social { 
-    display: flex;  
+
+.social {
+    display: flex;
 }
-.pic { 
-    background-image:url(p8.jpeg);
+
+.pic {
+    background-image: url(p8.jpeg);
     width: 800px;
     height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     border-radius: 50%;
-    border: 2px solid black; 
-    overflow: hidden; 
+    border: 2px solid black;
+    overflow: hidden;
 }
-.pic-container{ 
+
+.pic-container {
     display: flex;
     justify-content: center;
 }
-.button { 
+
+.button {
     width: 150px;
     height: 50px;
     border: 1px solid #333;
@@ -63,87 +73,200 @@ header {
     position: relative;
     z-index: 0;
     transition: 0.8s;
-}
-.deco{ 
     text-decoration: none;
 }
-.button::before, .button::after{ 
+
+.deco {
+    text-decoration: none;
+}
+
+.button::before,
+.button::after {
     position: absolute;
     background: #eee;
     z-index: -1;
     transition: 0.8s;
     content: '';
 }
-.button::before{ 
-    height: 50px; 
+
+.button::before {
+    height: 50px;
     width: 130px;
 }
-.button::after{ 
+
+.button::after {
     width: 150px;
     height: 30px;
 }
-.button:hover::before{ 
+
+.button:hover::before {
     width: 0px;
-    background: #eee;  
+    background: #eee;
 }
-.button:hover::after{ 
+
+.button:hover::after {
     height: 0px;
     background: #eee;
 }
-.button:hover{ 
+
+.button:hover {
     background: #eee;
 }
-.socials{ 
+
+.socials {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 15px; 
-    margin: 15px; 
-    
+    padding: 15px;
+    margin: 15px;
+
 }
-#about{ 
+
+#about {
     text-align: center;
     font-family: 'Oswald';
-    padding: 0px 50px; 
-} 
-#form{ 
+    padding: 0px 50px;
+}
+
+#form {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family:'Oswald';
-    border: solid ;
+    font-family: 'Oswald';
+    border: solid;
     margin: 5%;
 }
-.footer{ 
+
+.footer {
     display: flex;
     justify-content: center;
-    padding: 30px; 
+    padding: 30px;
     background-color: beige;
     border-top: solid black 5px;
     text-align: center;
 }
+
+.theGame {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px black solid;
+    height: 500px;
+    font-family: 'Oswald', sans-serif;
+    margin: 50px;
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    font-family: 'Oswald', sans-serif;
+    /* border: solid red; */
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.right {
+    display: flex;
+    font-size: 16px;
+    /* border: solid black; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+
+}
+
+.number {
+    font-size: 30px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.gameWriting {
+    display: flex;
+    /* border: solid green; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.spacing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* border: solid purple; */
+}
+
+.checkButton,
+.resetButton {
+    width: 35%;
+    height: 20%;
+    border-radius: 2%;
+}
+
+.checkButton:hover,
+.resetButton:hover {
+    background-color: gray;
+}
+
+.between {
+    font-size: 25px;
+}
+
+.start-score,
+.highScore,
+.Score,
+.newHighScore {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 768px) {
-    .name
-    { 
-        font-size: 15px; 
+    .name {
+        font-size: 15px;
     }
-    .socials{ 
+
+    .socials {
         flex-direction: column;
     }
-    .pic{ 
+
+    .pic {
         width: 450px;
         height: 450px;
+    }
+
+    .theGame,
+    .gameWriting {
+        width: 80%;
+        flex-direction: column;
+        font-size: smaller;
+    }
+
+    .spacing {
+        width: 100%;
+    }
+
+    .right {
+        flex-direction: row;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .name
-    { 
-        font-size: 10px; 
+    .name {
+        font-size: 10px;
+
     }
-    .pic{ 
+
+    .pic {
         width: 350px;
         height: 350px;
     }
-    
-}  
+
+}
