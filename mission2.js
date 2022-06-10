@@ -22,9 +22,8 @@ document.querySelector('.checkButton').addEventListener('click', function () {
     } else if (guess === secretNumber) {
         displayMessage('Number is correct!');
         document.querySelector('.number').textContent = secretNumber;
-
         document.querySelector('.theGame').style.backgroundColor = '#60b347';
-        document.querySelector('.number').style.width = '30px';
+        document.querySelector('.number').style.width = '80px';
 
         if (score > highscore) {
             highscore = score;
@@ -55,5 +54,5 @@ document.querySelector('.resetButton').addEventListener('click', function () {
     document.querySelector('.guess').value = '';
 
     document.querySelector('.theGame').style.backgroundColor = '#eee';
-    document.querySelector('.number').style.width = '30px';
+    document.querySelector('.number').style.width = '80px';
 });
