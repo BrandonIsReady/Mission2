@@ -1,0 +1,3 @@
+# Mission2
+
+This is my Mission Ready, Level 4, Mission 2. This was my first project with Javascript which I built a number guessing game. Oh, how far ive come...
